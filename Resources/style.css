@@ -1,0 +1,265 @@
+html {
+    font-size: 16px;
+    background-color: black;
+}
+
+/*fonts*/
+@font-face {
+    font-family: 'chalktasticregular';
+    src: url('chalktastic-r78l-webfont.woff2') format('woff2'),
+         url('chalktastic-r78l-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'chalktasticregular';
+    src: url('chalktastic-x1nr-webfont.woff2') format('woff2'),
+         url('chalktastic-x1nr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dk_crayon_crumbleregular';
+    src: url('dkcrayoncrumble-ddll-webfont.woff2') format('woff2'),
+         url('dkcrayoncrumble-ddll-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rayandoregular';
+    src: url('rayando-xj18-webfont.woff2') format('woff2'),
+         url('rayando-xj18-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+}
+
+/*main banner*/
+.banner h1 {
+    color:goldenrod;
+    display:flex;
+    text-align:center;
+    width: 100%;
+    text-size-adjust: auto;
+    font-size: 4.5rem;
+    z-index: 1;
+    position: absolute;
+    font-family:rayandoregular;
+    justify-content: center;
+    align-self: start;
+    line-height: 1rem;
+    font-weight: 100;
+
+}
+.banner {
+    display: flex;
+    height: 430px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 430px;
+}
+
+/*navigation bar*/
+.navbar {
+    position: sticky;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 5px auto;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar a {
+    flex: 1;
+    text-align: center;
+    border:2px solid goldenrod;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 1rem;
+    font-family: chalktasticregular;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(9, 86, 9);
+}
+
+.navbar .active {
+    background-color: rgb(9, 86, 9);
+}
+
+/*mission statement on home page*/
+.mission {
+    display: flex;
+}
+
+.mission .container {
+    display: flex;
+    padding: 1rem;
+    width: 50%;
+    color: goldenrod;
+    text-align: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.img-container img {
+    max-width: 100%;
+}
+
+.statement {
+    padding-right: 2rem;
+    font-family: 'dk_crayon_crumbleregular', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+/*beer menu*/
+
+.menu {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.beer-container {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.beer-pic img {
+    max-width: 100%;
+}
+
+.beer-description {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 2rem;
+    background-color: rgb(9, 86, 9);
+    margin: 0 2rem;
+    border: 2px solid goldenrod;
+    font-family: chalktasticregular;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.beer-container h4 {
+    color: white;
+    margin-bottom: .1rem;
+    font-weight: 100;
+}
+
+.beer-container h5 {
+    color: white;
+    margin-top: .1rem;
+    font-weight: 100;
+}
+
+/*location*/
+
+.location {
+    display: flex;
+    width: 80%;
+    margin: 5rem auto;
+    justify-content: space-around;
+}
+
+.map {
+    width: 50%;
+}
+
+.map img {
+    max-width: 100%;
+}
+
+.address {
+    color: white;
+    background-color:rgb(9, 86, 9);
+    border: 2px solid goldenrod;
+    padding: 3rem;
+    margin-left: 2rem;
+    font-family: chalktasticregular;
+    font-weight: 100;
+}
+
+.address h2, .address h3 {
+    font-weight: 100;
+}
+
+/*about us*/
+
+.about {
+    display: block;
+    margin: 3rem auto;
+}
+
+.about h2, .about p {
+    text-align: center;
+    font-family: dk_crayon_crumbleregular;
+    font-weight: 100;
+    color: goldenrod;
+    padding: 1rem 3rem;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+}
+
+.about p {
+    font-size: 1.75rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .banner img {
+        display: none;
+    }
+
+    .banner h1 {
+        line-height: 6rem;
+    }
+
+    .menu {
+        display:block;
+        justify-content: center;
+    }
+
+    .beer-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .opposite {
+        flex-direction: column-reverse;
+    }
+
+    .beer-description {
+        margin-bottom: 3rem;
+    }
+
+}
